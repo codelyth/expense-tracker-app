@@ -65,5 +65,6 @@ Grafikler, göz yormayan modern "Flat UI" renkleri kullanılarak tasarlanmışt�
 👕 Giyim: Mat Sarı (#F1C40F)
 
 ⚙️ Diğer: Mat Gri (#95A5A6)
+```
 
 Bu proje eğitim amaçlı geliştirilmiştir.
