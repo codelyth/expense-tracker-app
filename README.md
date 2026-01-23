@@ -40,16 +40,8 @@ src/
 └── io/
     └── CsvStorage.java         // 💾 Dosya okuma/yazma işlemleri (File I/O).
 
-🛠️ Kurulum ve Çalıştırma
+🛠️ Çalıştırma
 Proje standart Java kütüphaneleri (JDK 8 ve üzeri) kullanır, harici bir bağımlılık gerektirmez.
-
-1.Projeyi Klonlayın:
-Bash
-git clone [https://github.com/kullaniciadi/harcama-takip.git](https://github.com/kullaniciadi/harcama-takip.git)
-
-2.IDE ile Açın: IntelliJ IDEA, Eclipse veya VS Code ile projeyi açın.
-
-3.Çalıştırın: src/app/ExpenseTrackerApp.java sınıfını çalıştırın.
 
 🎨 Renk Paleti
 Grafikler, göz yormayan modern "Flat UI" renkleri kullanılarak tasarlanmıştır:
