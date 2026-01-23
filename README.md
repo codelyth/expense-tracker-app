@@ -40,8 +40,6 @@ src/
 └── io/
     └── CsvStorage.java         // 💾 Dosya okuma/yazma işlemleri (File I/O).
 
-🛠️ Çalıştırma
-Proje standart Java kütüphaneleri (JDK 8 ve üzeri) kullanır, harici bir bağımlılık gerektirmez.
 
 🎨 Renk Paleti
 Grafikler, göz yormayan modern "Flat UI" renkleri kullanılarak tasarlanmıştır:
@@ -59,4 +57,4 @@ Grafikler, göz yormayan modern "Flat UI" renkleri kullanılarak tasarlanmışt�
 ⚙️ Diğer: Mat Gri (#95A5A6)
 ```
 
-Bu proje eğitim amaçlı geliştirilmiştir.
+Bu proje eğitim amaçlı geliştirilmiştir. Standart Java kütüphaneleri (JDK 8 ve üzeri) kullanır, harici bir bağımlılık gerektirmez.
