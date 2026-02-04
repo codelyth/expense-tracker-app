@@ -34,7 +34,6 @@ public class Transaction {
         return note;
     }
 
-    // toString Metodunun Override Edilmesi
     @Override
     public String toString() {
         return "Transaction{" +

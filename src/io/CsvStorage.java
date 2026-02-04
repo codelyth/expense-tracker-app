@@ -13,10 +13,10 @@ import java.util.List;
 import java.util.Locale;
 
 public class CsvStorage {
-	/**
-     * Listeyi CSV dosyasına yazar.
-     * Locale.US kullanılarak sayıların "150,00" değil "150.00" olarak yazılması garanti edilir.
-     * Böylece CSV yapısı bozulmaz.
+	/*
+     Listeyi CSV dosyasına yazar.
+     Locale.US kullanılarak sayıların "150,00" değil "150.00" olarak yazılması garanti edilir.
+     Böylece CSV yapısı bozulmaz.
      */
     public static void save(List<Transaction> liste, String dosyaYolu) {
         try (FileWriter writer = new FileWriter(dosyaYolu)) {

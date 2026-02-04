@@ -136,7 +136,7 @@ public class ExpenseTrackerApp extends JFrame{
         JButton btnDeleteSelected = new JButton("Seçilenleri Sil");
         JButton btnClearAll = new JButton("TÜMÜNÜ SİL");
         
-        // YENİ BUTON: AYLIK ÖZET
+        // AYLIK ÖZET
         JButton btnMonthSummary = new JButton("Aylık Özet");
         btnMonthSummary.setBackground(new Color(0, 153, 153)); // Turkuaz/Mavi tonu
         btnMonthSummary.setForeground(Color.BLACK);
@@ -169,7 +169,6 @@ public class ExpenseTrackerApp extends JFrame{
             JOptionPane.showMessageDialog(this, "Liste güncellendi.");
         });
         
-        // YENİ BUTON İŞLEVİ
         btnMonthSummary.addActionListener(e -> showMonthSummary());
 
         btnDeleteSelected.addActionListener(e -> deleteSelectedTransactions());
@@ -190,7 +189,7 @@ public class ExpenseTrackerApp extends JFrame{
         checkEndOfMonthAlert();
     }
 
-    // --- YENİ METOT: AYLIK ÖZET PENCERESİ ---
+    // --- AYLIK ÖZET PENCERESİ ---
     private void showMonthSummary() {
         // Hangi ayı baz alacağız? (Filtredeki mi, Şu anki mi?)
         int selectedMonthIndex = cmbFilterMonth.getSelectedIndex(); // 0=Tümü, 1=Ocak...
@@ -375,8 +374,7 @@ public class ExpenseTrackerApp extends JFrame{
                 boolean yearMatch = !finalFilterByYear || (t.getDate().getYear() == finalYear);
                 boolean monthMatch = (monthIndex == 0) || (t.getDate().getMonthValue() == monthIndex);
                 return yearMatch && monthMatch;
-            })
-            .collect(Collectors.toList());
+            }).collect(Collectors.toList());
 
         displayedTransactions.sort(Comparator.comparing(Transaction::getDate));
 

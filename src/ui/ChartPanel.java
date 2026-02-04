@@ -13,8 +13,8 @@ public class ChartPanel extends JPanel{
         repaint();
     }
 
-    /**
-     * Kategoriye özel sabit ve göz yormayan renkleri belirleyen metot.
+    /*
+     Kategoriye özel sabit ve göz yormayan renkleri belirleyen metot.
      */
     private Color getColorForCategory(String category) {
         if (category == null) return Color.GRAY;
@@ -70,11 +70,11 @@ public class ChartPanel extends JPanel{
             int y = height - padding - barHeight;
 
             // --- RENK SEÇİMİ ---
-            // Artık sıradaki rengi değil, kategoriye özel rengi çağırıyoruz
+            // Kategoriye özel rengi çağırıyoruz
             g.setColor(getColorForCategory(category));
             g.fillRect(x, y, barWidth - 10, barHeight);
 
-            // --- YAZILAR (Siyah) ---
+            // --- YAZILAR ---
             g.setColor(Color.BLACK);
             
             // Tutarı sütunun üzerine yaz
